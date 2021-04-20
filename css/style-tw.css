@@ -31,7 +31,6 @@
 
 /* '.h1' class or 'h1' element selector - style(s) applied to all elements with class '.h1' and to all 'h1' elements */
 .h1, h1{
-    font-size: 2.75rem;
     font-family: 'Sifonn Pro','Univers LT Std 65 Bold','Helvetica'; 
 }
 
@@ -50,15 +49,17 @@ a{
     background-color:#ff6666;
 }
 
-/* <-- NAVBAR --> */
-
-/* '#hc-navbar-brand' id selector - style(s) that are applied to the element with id 'hc-navbar-brand' */
-#hc-navbar-brand{
+.hc-color{
     color:#ff6666;
-    font-size: 2.75rem;
 }
 
-/* '#hc-navbar-brand' id and child class '.nav-link' selector - style(s) that are applied to the element with class '.nav-link' that are children of element with id '#hc-navbar-nav' */
+.hc-btn{
+    font-family: 'Univers LT Std 65 Bold','Helvetica';  
+}
+
+/* <-- NAVBAR --> */
+
+/* '#hc-navbar-nav' id and child class '.nav-link' selector - style(s) that are applied to the element with class '.nav-link' that are children of element with id '#hc-navbar-nav' */
 #hc-navbar-nav .nav-link{
     font-family: 'Univers LT Std 65 Bold','Helvetica';
     font-size: 0.875rem;
@@ -71,17 +72,19 @@ a{
 /* '.hc-page-header' class selector - style(s) applied to all elements with class '.hc-page-header' */
 .hc-page-header{
     position: relative;
-    height: 200px;
-    background: url('../img/harajuku-guests-banner.jpg');
-    background-attachment: fixed;
+    min-height: 250px;
+    background: url('../img/harajuku-contact-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     border-bottom: 1px #eee solid;
-    padding-top: 50px;
 }
 
 /* '#hc-page-header-contact' class selector - style(s) applied to all elements with id '#hc-page-header-contact' */
 #hc-page-header-contact{
-    background: url('../img/harajuku-guests-banner.jpg');
+    background: url('../img/harajuku-contact-banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* '.hc-dark-overlay' class selector - style(s) applied to all elements with class '.hc-hc-dark-overlay' */
@@ -110,25 +113,34 @@ a{
 
 /* '.carousel-item' class selector - style(s) applied to all elements with class '.carousel-item' */
 .carousel-item{
-    height: 450px;
+    min-height: 450px;
 }
 
 /* '.hc-banner-carousel-image-1' class selector - style(s) applied to all elements with class '.hc-banner-carousel-image-1' */
 .hc-banner-carousel-image-1{
     background: url('../img/harajuku-banner.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* '.hc-banner-carousel-image-2' class selector - style(s) applied to all elements with class '.hc-banner-carousel-image-2' */
 .hc-banner-carousel-image-2{
     background: url('../img/harajuku-tickets-banner.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* '.hc-banner-carousel-image-3' class selector - style(s) applied to all elements with class '.hc-banner-carousel-image-3' */
 .hc-banner-carousel-image-3{
     background: url('../img/harajuku-guests-banner.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* '#hc-banner' id and child 'a'elements selector - style(s) that are applied to all a elements that are children of element with id '#hc-banner' */
+#hc-banner a {
+    font-family: 'Univers LT Std 65 Bold','Helvetica';
+    font-size: 1rem; 
 }
 
 /* <-- CARDS --> */
@@ -143,11 +155,4 @@ a{
 /* '.hc-mascot' class selector - style(s) applied to all elements with class '.hc-mascot' */
 .hc-mascot{
     content: url('../img/harajuku-mascot.png');
-    height: 450px;
 }
-
-
-
-
-
-
