@@ -7,5 +7,11 @@
 
 /* <-- TICKET DETAILS --> */
 
+.card
+{
+    border-color: #ff6666;
+    border-width: 5px;
+}
+
 
 /* <-- FORM --> */
