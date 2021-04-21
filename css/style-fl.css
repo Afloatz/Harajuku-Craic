@@ -13,5 +13,18 @@
     border-width: 5px;
 }
 
+.ticket-btn
+{
+    color: white;
+    background-color: #ff6666;
+}
+
+/* Override the default card footer styling from Bootstrap */
+.card-footer
+{
+    background-color: white;
+    text-align: center;
+    border-top: none;
+}
 
 /* <-- FORM --> */
