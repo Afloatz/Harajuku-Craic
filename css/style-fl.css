@@ -27,4 +27,10 @@
     border-top: none;
 }
 
+#dotted-line
+{
+    border-style: dotted;
+    border-color: #ff6666;
+}
+
 /* <-- FORM --> */
