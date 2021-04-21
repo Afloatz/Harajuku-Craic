@@ -27,10 +27,11 @@
     border-top: none;
 }
 
-#dotted-line
-{
-    border-style: dotted;
-    border-color: #ff6666;
+.horizontal_dotted_line{
+    border-bottom: 8px dotted #ff6666;
+    width: 100%;
+    padding-top: 40px;
+
 }
 
 /* <-- PAYMENT --> */
