@@ -98,13 +98,13 @@
               </div>            
           </div>
 
-          <!-- Payment -->
-
           <div class="mt-5 horizontal_dotted_line"></div>
 
-          <h3 class="mt-5 text-center">Enter Details</h3>
+          <h3 class="mt-5 text-center">Enter Details</h3>          
     
           <div class="row mt-5">
+
+             <!-- Ticket Quantity -->
             <div class="col-md-3 offset-md-3">
                 <table class="table table-borderless">
                     <tr>
@@ -114,19 +114,19 @@
                     <tr>
                         <td>Standard</td>
                         <td>
-                            <input type="number" id="standard-qty" class="form-control qty" name="qty" max="10">
+                            <input type="number" id="standard-qty" class="form-control qty" name="qty" min="0" max="10">
                         </td>
                     </tr>
                     <tr>
                         <td>Child</td>
                         <td>
-                            <input type="number" id="child-qty" class="form-control qty" name="qty" max="10">
+                            <input type="number" id="child-qty" class="form-control qty" name="qty" min="0" max="10">
                          </td>
                     </tr>
                     <tr>
                         <td>Family</td>
                         <td>
-                             <input type="number" id="family-qty" class="form-control qty" name="qty" max="10">
+                             <input type="number" id="family-qty" class="form-control qty" name="qty" min="0" max="10">
                         </td>
                     </tr>
                     <tr>
@@ -140,22 +140,29 @@
                   </table>
             </div>
 
-            <div class="col-md-3 offset-md-1">
-                <form action="/action_page.php">
+            <!-- Ticket payment-->
+            <div class="col-md-4 offset-md-1 mt-3">
+                <form action="">
                     <div class="form-group">
-                      <label for="email">Email address:</label>
-                      <input type="email" class="form-control" placeholder="Enter email" id="email">
+                      <input type="email" class="form-control" placeholder="Email" id="email" required>
                     </div>
                     <div class="form-group">
-                      <label for="pwd">Password:</label>
-                      <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                      <input type="text" class="form-control" placeholder="Credit Card Number" id="cc-number" required>
                     </div>
-                    <div class="form-group form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox"> Remember me
-                      </label>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Name on Card" id="name" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div class="form-row">
+                        <div class="col">
+                          <input type="date" class="form-control" id="expiration-date" placeholder="Expiration Date" name="expiration" min="2021-25-04" required>
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="CVC" name="cvc" required>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn ticket-btn">Pay</button>
+                        </div>
+                    </div>                 
                   </form>
             </div>
           </div>
