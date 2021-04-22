@@ -35,8 +35,8 @@
 }
 
 /* <-- PAYMENT --> */
-/*
-#ticket-type
+
+#ticket-order
 {
-    width: 100%;
+    display: none; /* does not display the ticket ordering before the user chooses a ticket type*/
 }
