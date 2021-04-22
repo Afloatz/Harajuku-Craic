@@ -10,9 +10,6 @@ function myPrompt() {
   elmnt.scrollIntoView();
 }
 
-
-
-
 // Calculate the tickets total price when the user choose the quantity on page tickets.html
 
 $(document).ready(function() {
