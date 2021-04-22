@@ -5,6 +5,12 @@
     background: url('../img/harajuku-tickets-banner.jpg');
 }
 
+/* '#hc-page-header-timetable' class selector - style(s) applied to all elements with id '#hc-page-header-timetable' */
+#hc-page-header-timetable{
+    background: url('../img/headertimetable.jpg');
+}
+
+
 /* <-- TICKET DETAILS --> */
 
 .card
