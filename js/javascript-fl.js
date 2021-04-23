@@ -30,6 +30,6 @@ $(document).ready(function() {
         var totalPrice = stdQuantity * stdPrice + childQuantity * childPrice + familyQuantity * familyPrice
 
         // Display the total price to the user
-        $("#total-price").text(totalPrice + '€');
+        $("#total-price").text('€' + totalPrice);
   });
 });
