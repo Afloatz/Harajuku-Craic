@@ -147,20 +147,21 @@
                 <div class="col-md-4 offset-md-1 mt-3">
                     <form action="#">
                         <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email" id="email" required>
+                            <input type="email" class="form-control" placeholder="Email" id="email" required>
                         </div>
                         <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Credit Card Number" id="cc-number" required>
+                            <!-- using tel input field instead of number to not have the arrow in the field-->
+                            <input type="tel" class="form-control" placeholder="Credit Card Number" id="cc-number" pattern="[0-9]*" required>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="Name on Card" id="name" required>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                            <input type="date" class="form-control" id="expiration-date" placeholder="Expiration Date" name="expiration" min="25-04-2021" required>
+                                <input type="date" class="form-control" id="expiration-date" placeholder="Expiration Date" name="expiration" min="25-04-2021" required>
                             </div>
                             <div class="col">
-                            <input type="text" class="form-control" placeholder="CVC" name="cvc" required>
+                                <input type="tel" class="form-control" placeholder="CVC" name="cvc" pattern="[0-9]*" required>
                             </div>
                             <div class="col">
                                 <button type="submit" class="btn ticket-btn">Pay</button>
