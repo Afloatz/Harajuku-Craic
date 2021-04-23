@@ -33,3 +33,4 @@ $(document).ready(function() {
         $("#total-price").text('€' + totalPrice);
   });
 });
+
