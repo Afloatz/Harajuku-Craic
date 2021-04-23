@@ -116,19 +116,20 @@
                         <tr>
                             <td>Standard</td>
                             <td>
-                                <input type="number" id="standard-qty" class="form-control qty" name="qty" min="0" max="10">
+                                <!-- Js oninput to make sure that the user does not enter manually a negative value-->
+                                <input type="number" id="standard-qty" class="form-control qty" name="qty" min="0" max="10" oninput="validity.valid||(value='');">
                             </td>
                         </tr>
                         <tr>
                             <td>Child</td>
                             <td>
-                                <input type="number" id="child-qty" class="form-control qty" name="qty" min="0" max="10">
+                                <input type="number" id="child-qty" class="form-control qty" name="qty" min="0" max="10" oninput="validity.valid||(value='');">
                             </td>
                         </tr>
                         <tr>
                             <td>Family</td>
                             <td>
-                                <input type="number" id="family-qty" class="form-control qty" name="qty" min="0" max="10">
+                                <input type="number" id="family-qty" class="form-control qty" name="qty" min="0" max="10" oninput="validity.valid||(value='');">
                             </td>
                         </tr>
                         <tr>
@@ -144,7 +145,7 @@
 
                 <!-- Ticket payment-->
                 <div class="col-md-4 offset-md-1 mt-3">
-                    <form action="">
+                    <form>
                         <div class="form-group">
                         <input type="email" class="form-control" placeholder="Email" id="email" required>
                         </div>
@@ -156,7 +157,7 @@
                         </div>
                         <div class="form-row">
                             <div class="col">
-                            <input type="date" class="form-control" id="expiration-date" placeholder="Expiration Date" name="expiration" min="2021-25-04" required>
+                            <input type="date" class="form-control" id="expiration-date" placeholder="Expiration Date" name="expiration" min="25-04-2021" required>
                             </div>
                             <div class="col">
                             <input type="text" class="form-control" placeholder="CVC" name="cvc" required>
