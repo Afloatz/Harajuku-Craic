@@ -34,3 +34,13 @@ $(document).ready(function() {
   });
 });
 
+// Prevent the user to submit a payment if no ticket was selected
+function validateForm() {
+  var totalPrice = document.getElementById("total-price").innerHTML;
+  
+  if (totalPrice == "€0") {
+    alert("You must first enter the ticket quantity");
+    return false;
+  }
+}
+

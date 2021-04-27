@@ -133,19 +133,16 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                Total
-                            </td>
-                            <td id="total-price">
-                                €0 <!-- Value updates if user choose ticket quantity-->
-                            </td>
+                            <td>Total</td>
+                            <!-- Value updates if user choose ticket quantity-->
+                            <td id="total-price">€0</td>
                         </tr>
                     </table>
                 </div>
 
                 <!-- Ticket payment-->
                 <div class="col-md-4 offset-md-1 mt-3">
-                    <form action="#">
+                    <form action="#" onsubmit="return validateForm()">
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" id="email" required>
                         </div>
