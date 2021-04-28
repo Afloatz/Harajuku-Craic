@@ -72,54 +72,55 @@
                 <div class="col-md-4">
                     <div class="card p-4">
                         <div class="card-body">
-                            <h4>Get In Touch</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, ipsam!</p>
+                            <h3>Get in Touch!</h3>
+                            <p>Our Team is ready to Answer your Questions!</p>
                             <h4>Address</h4>
                             <p>The Convention Centre Dublin, Spencer Dock, N Wall Quay, North Wall, Dublin 1, D01 T1Q6</p>
                             <h4>Email</h4>
                             <p>hello@harajukucraic.ie</p>
                             <h4>Phone</h4>
-                            <p>(01) 856 0000</p>
+                            <p><a href="tel:+353-01-856-0000">+353 1 856 0000</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="card p-4">
-                        <form>
+                        <!-- On a Commercial website the action would run a PHP script to process the form data -->
+                        <form id="hc-form-contact" action="#">
                         <div class="card-body">
-                            <h3 class="text-center">Please fill out this form to contact us</h3>
-                            <hr>
+                            <h3 class="text-center pb-5">Please fill out this form to contact us</h3>
+                            <hr class="text-center pb-2">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="First Name">
+                                    <div class="form-group required">
+                                        <input type="text" class="form-control" id="hc-input-firstname" required="true" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group required">
+                                        <input type="text" class="form-control" id="hc-input-lastname" required="true"  placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group required">
+                                        <input type="email" class="form-control" id="hc-input-email" required="true"  placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Phone Number">
+                                        <input type="text" class="form-control" id="hc-input-phone" pattern="[0-9]*" placeholder="Phone Number">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea placeholder="Message" class="form-control"></textarea>
+                                    <div class="form-group required">
+                                        <textarea placeholder="Message" class="form-control" id="hc-input-message" required="true" ></textarea>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-12 pt-3">
                                     <div class="form-group">
-                                        <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
+                                        <input type="submit" value="Submit" id="hc-submit-contact" class="btn btn-outline-danger btn-block">
                                     </div>
                                 </div>
                             </div>
