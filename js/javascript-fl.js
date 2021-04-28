@@ -18,9 +18,6 @@ $(document).ready(function() {
         var stdQuantity = $("#standard-qty").val();
         var childQuantity = $("#child-qty").val();
         var familyQuantity = $("#family-qty").val();
-        console.log(stdQuantity);
-        console.log(childQuantity);
-        console.log(familyQuantity);
 
         // ticket prices
         var stdPrice = 25;
