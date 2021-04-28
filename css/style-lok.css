@@ -5,7 +5,19 @@
     background-repeat: no-repeat;
 }
 
-#Guest-image{
+#Guest-image1{
+    padding-right: 50px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+#Guest-image2{
+    padding-right: 50px;
+    float: left;
+    padding-bottom: 20px;
+}
+
+#Guest-image3{
     padding-right: 50px;
     float: left;
     padding-bottom: 20px;
