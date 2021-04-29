@@ -1,3 +1,9 @@
+/*
+Author - Tim Winwood - x20213638
+Comments and spacing have been used exhaustively to aide review and demonstrate understanding
+In a commercial setting, comments would be limited to more technical aspects of the design
+*/
+
 /* <-- GENERAL --> */
 
 /* '@font-face' rule to import the 'Sifonn Pro' font from the 'fonts' folder */
@@ -175,6 +181,11 @@ a{
 /* '#hc-cards' id child 'h3'selector - style(s) that are applied to 'h3' elements that are children of element with id 'hc-cards' */
 #hc-cards h3{
     margin-top: 1rem;
+}
+
+/* 'a' element and '.hdc-card-anchor' and 'hover' state selector - style(s) applied to 'a' elements with class 'hc-card-anchor' and on 'hover' */
+a.hc-card-anchor, a.hc-card-anchor:hover{
+    text-decoration: none;
 }
 
 /* <-- MASCOT --> */
