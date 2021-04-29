@@ -24,11 +24,6 @@
     border-radius: 0.5rem;
 }
 
-.ticket-btn
-{
-    color: white;
-    background-color: #ff6666;
-}
 
 /* Override the default card footer styling from Bootstrap */
 .card-footer
