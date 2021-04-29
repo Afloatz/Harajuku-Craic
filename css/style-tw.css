@@ -124,17 +124,6 @@ a{
     background: rgba(0,0,0,0.5);
 }
 
-/* <-- FOOTER --> */
-
-/* '.hc-footer' class selector - style(s) applied to all elements with class '.hc-footer' */
-.hc-footer{
-    color: #fff;
-}
-
-/* '.hc-footer' class child 'p' and child 'h1' elements  selector - style(s) that are applied to 'p' and 'h1' elements that are children of element with class 'hc-footer' */
-.hc-footer p, .hc-footer h1{
-    margin: 0;
-}
 
 /* <-- BANNER SLIDER --> */
 
